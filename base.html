@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+              <h5>Calculadora de huevitos</h5>
+              <p>Precio base: $<span class="precio_inicial"></span> </p>
+        
+              <p>Cantidad:
+                <span class="cantidad">0</span>
+
+                <button onclick="
+                cantidad = cantidad +1;
+                valorTotal = cantidad * precio;
+                document.querySelector('.cantidad').innerHTML=cantidad;
+                document.querySelector('.valorTotal').innerHTML=valorTotal;
+                ">+</button>
+
+                <button onclick="
+                cantidad = cantidad -1;
+                valorTotal = cantidad * precio;
+                document.querySelector('.cantidad').innerHTML=cantidad;
+                document.querySelector('.valorTotal').innerHTML=valorTotal;
+                ">-</button>
+              </p>
+            
+
+        </div>
+    </section>
+
+    <div class="total-section">
+        <p>Total a pagar: $<span class="valorTotal"></span> </p>
+    </div>
+
+    <script src="./Js/index.js">
+      
+
+    </script>
+</body>
+</html>
